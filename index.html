@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a class="logo" href="#home">BLISSFUL<span>COFFEE</span></a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+    </nav>
+    <button class="cart-top">Cart <span id="cartCount">0</span></button>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <img src="assets/hero-coffee.jpg" alt="Coffee cup">
+        </div>
+
+        <div class="hero-content">
+            <p class="eyebrow">YOUR DAILY COFFEE MOMENT</p>
+            <h1>Fall in Love with<br><span>Coffee</span> in Blissful Delight!</h1>
+            <p class="hero-text">
+                Welcome to our cozy coffee corner, where every cup
+                is prepared with care and delivered straight to you.
+            </p>
+            <a href="#coffee" class="primary-btn">Explore Coffee</a>
+        </div>
+    </section>
+
+    <section class="coffee-section" id="coffee">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">OUR MENU</p>
+                <h2>Choose your coffee</h2>
+            </div>
+
+            <div class="categories">
+                <button class="category active">All Coffee</button>
+                <button class="category">Macchiato</button>
+                <button class="category">Latte</button>
+                <button class="category">Americano</button>
+            </div>
+        </div>
+
+        <div class="promo">
+            <div>
+                <span>Promo</span>
+                <h2>Buy one get<br>one FREE</h2>
+            </div>
+            <div class="promo-pictures">
+                <img src="assets/mocha.jpg" alt="Coffee">
+                <img src="assets/flat-white.jpg" alt="Coffee">
+            </div>
+        </div>
+
+        <div class="products">
+
+            <article class="product"
+                data-name="Caffe Mocha"
+                data-price="4.53"
+                data-image="assets/mocha.jpg">
+                <div class="product-image">
+                    <img src="assets/mocha.jpg" alt="Caffe Mocha">
+                    <span>★ 4.8</span>
+                </div>
+                <h3>Caffe Mocha</h3>
+                <p>Deep Foam</p>
+                <div class="product-bottom">
+                    <strong>$4.53</strong>
+                    <button class="add">+</button>
+                </div>
+            </article>
+
+            <article class="product"
+                data-name="Flat White"
+                data-price="3.53"
+                data-image="assets/flat-white.jpg">
+                <div class="product-image">
+                    <img src="assets/flat-white.jpg" alt="Flat White">
+                    <span>★ 4.8</span>
+                </div>
+                <h3>Flat White</h3>
+                <p>Espresso</p>
+                <div class="product-bottom">
+                    <strong>$3.53</strong>
+                    <button class="add">+</button>
+                </div>
+            </article>
+
+            <article class="product"
+                data-name="Caffe Latte"
+                data-price="4.20"
+                data-image="assets/latte.jpg">
+                <div class="product-image">
+                    <img src="assets/latte.jpg" alt="Caffe Latte">
+                    <span>★ 4.8</span>
+                </div>
+                <h3>Caffe Latte</h3>
+                <p>Steamed milk</p>
+                <div class="product-bottom">
+                    <strong>$4.20</strong>
+                    <button class="add">+</button>
+                </div>
+            </article>
+
+            <article class="product"
+                data-name="Americano"
+                data-price="3.20"
+                data-image="assets/americano.jpg">
+                <div class="product-image">
+                    <img src="assets/americano.jpg" alt="Americano">
+                    <span>★ 4.8</span>
+                </div>
+                <h3>Americano</h3>
+                <p>Espresso & water</p>
+                <div class="product-bottom">
+                    <strong>$3.20</strong>
+                    <button class="add">+</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="details-section">
+        <div class="detail-image">
+            <img id="detailImage" src="assets/mocha.jpg" alt="Selected coffee">
+        </div>
+
+        <div class="detail-info">
+            <p class="eyebrow">COFFEE DETAILS</p>
+            <h2 id="detailName">Caffe Mocha</h2>
+            <p class="sub">Deep Foam</p>
+
+            <div class="rating">★ <b>4.8</b> <span>(230 reviews)</span></div>
+
+            <hr>
+
+            <h3>Description</h3>
+            <p>
+                A delicious coffee made with espresso, fresh milk
+                and a smooth layer of foam. Perfect for your daily
+                coffee break.
+            </p>
+
+            <h3>Size</h3>
+
+            <div class="sizes">
+                <button>S</button>
+                <button class="selected">M</button>
+                <button>L</button>
+            </div>
+
+            <div class="price-row">
+                <div>
+                    <small>Price</small>
+                    <strong id="detailPrice">$4.53</strong>
+                </div>
+
+                <button class="primary-btn" id="buyNow">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section" id="order">
+
+        <div class="order-left">
+            <p class="eyebrow">YOUR ORDER</p>
+            <h2>Ready for your<br>coffee?</h2>
+
+            <div class="delivery-switch">
+                <button class="active">Deliver</button>
+                <button>Pick Up</button>
+            </div>
+
+            <div class="address">
+                <small>Delivery Address</small>
+                <strong>Jl. Kpg Sutoyo</strong>
+                <p>Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.</p>
+                <button>Edit Address</button>
+                <button>Add Note</button>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-product">
+                <img id="orderImage" src="assets/mocha.jpg" alt="">
+                <div>
+                    <strong id="orderName">Caffe Mocha</strong>
+                    <span>Deep Foam</span>
+                </div>
+
+                <div class="quantity">
+                    <button id="minus">−</button>
+                    <strong id="quantity">1</strong>
+                    <button id="plus">+</button>
+                </div>
+            </div>
+
+            <div class="discount">
+                <span>▣</span>
+                <b>1 Discount is Applied</b>
+                <span>›</span>
+            </div>
+
+            <div class="summary">
+                <h3>Payment Summary</h3>
+                <div>
+                    <span>Price</span>
+                    <strong id="summaryPrice">$4.53</strong>
+                </div>
+                <div>
+                    <span>Delivery Fee</span>
+                    <span><s>$2.00</s> $1.00</span>
+                </div>
+            </div>
+
+            <div class="checkout">
+                <div>
+                    <small>Payment</small>
+                    <b>Cash / Wallet</b>
+                </div>
+                <button id="orderButton">Order</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="tracking-section">
+
+        <div class="map">
+            <div class="map-route"></div>
+            <div class="map-pin">📍</div>
+            <div class="bike">🛵</div>
+        </div>
+
+        <div class="tracking-info">
+            <p class="eyebrow">DELIVERY STATUS</p>
+            <h2>10 minutes left</h2>
+            <p>Delivery to Jl. Kpg Sutoyo</p>
+
+            <div class="progress">
+                <span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="status">
+                <div class="status-icon">🛵</div>
+                <div>
+                    <strong>Delivering your order</strong>
+                    <p>We will deliver your goods as soon as possible.</p>
+                </div>
+            </div>
+
+            <div class="courier">
+                <div class="avatar">BS</div>
+                <div>
+                    <strong>Brooklyn Simmons</strong>
+                    <small>Personal Courier</small>
+                </div>
+                <button>☎</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <p class="eyebrow">ABOUT US</p>
+        <h2>Good coffee.<br>Good mood.</h2>
+        <p>
+            We believe a great coffee can make an ordinary moment
+            feel special. Choose your favorite drink and enjoy it.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <strong>BLISSFUL<span>COFFEE</span></strong>
+    <p>Made for coffee lovers.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
